@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Infecting Logs...</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #8a2be2;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .loader {
+            border: 5px solid #1a1a1a;
+            border-top: 5px solid #8a2be2;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px #8a2be2;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .text { font-size: 1.2rem; letter-spacing: 2px; text-transform: uppercase; }
+    </style>
+    <script>
+        // Attendre 3 secondes puis lancer la simulation
+        setTimeout(function() {
+            window.location.href = "/simulate";
+        }, 3000);
+    </script>
+</head>
+<body>
+    <div class="loader"></div>
+    <div class="text">Injecting Malicious Payloads...</div>
+    <div style="margin-top: 10px; color: #444;">Accessing Target Vectors...</div>
+</body>
+</html>
