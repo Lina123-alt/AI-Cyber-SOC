@@ -2,6 +2,7 @@ AI-Cyber-SOC : Documentation Technique
 Ce projet implémente un Dashboard SOC (Security Operations Center) modulaire intégrant une détection hybride par Machine Learning et une analyse contextuelle via l'IA Générative.
 
  Architecture du Système
+
 🔹 Moteur d'Analyse Web (app.py)
 Fonction : Point d'entrée de l'application basé sur le framework Flask. Gère l'orchestration des données entre le backend et l'interface utilisateur.
 
